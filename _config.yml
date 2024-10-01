@@ -10,7 +10,7 @@ favicon: "assets/favicon.png"
 
 # Header and footer text
 header_text: "The Home of the Ice Eagles"
-header_feature_image: ""
+header_feature_image: false
 header_feature_image_responsive: true
 footer_text: 
   Created by <a href='https://hana.gallery'>Hana Donnelly</a> with <a href='https://github.com/sylhare/Type-on-Strap'>Type on Strap</a>
@@ -27,7 +27,7 @@ color_image: "assets/img/lineart.png"
 
 # Features
 katex: false
-mermaid: default
+mermaid: false
 google_analytics:
 cookie_consent: true
 color_theme: auto
