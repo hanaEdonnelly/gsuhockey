@@ -26,7 +26,7 @@ post_navigation: true
 color_image: "assets/img/lineart.png"
 
 # Features
-katex: true
+katex: false
 mermaid: default
 google_analytics:
 cookie_consent: true
