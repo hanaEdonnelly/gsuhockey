@@ -1,0 +1,30 @@
+<div class=posts>
+         <div class="post-teaser" id="next-game">
+            <h2 id="h2-next-game">Upcoming Game</h2>
+            <ul id="ul-next-game">
+                {% assign now = 'now' | date: "%s" %} <!-- Current timestamp in seconds -->
+                
+                <!-- Initialize a variable to hold the next upcoming game -->
+                {% assign next_game = null %}
+                
+                <!-- Iterate over games to find the next upcoming one -->
+                {% for game in site.games %}
+                    {% assign game_date = game.date | date: "%s" %}
+                    {% if game_date > now %}
+                        {% assign next_game = game %}
+                        {% break %} <!-- Exit loop once the first upcoming game is found -->
+                    {% endif %}
+                {% endfor %}
+                
+                {% if next_game != null %}
+                    <li>
+                        <p><b>{{ next_game.date | date: "%B %d @ %I:%M %p" }}</b></p><br>
+                        <p>vs {{ next_game.opponent }}</p><br>
+                        <p>{{ next_game.location }}</p>
+                    </li>
+                {% else %}
+                    <li>No upcoming games</li>
+                {% endif %}
+            </ul>
+        </div>  
+    </div>

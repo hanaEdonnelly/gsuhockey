@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+@import 'layouts/_blog.scss';
+
+.upcoming-games {
+    padding: 3% 4%;
+}
+
+#next-game {
+    background-color: #73000a;
+    text-align: center;
+    color: #e7f3f4;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#ul-next-game {
+    list-style-type: none;
+}
+
+#h2-next-game {
+    font-family: "Teko", system-ui;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 0.25em;
+    text-decoration: underline;
+}
+
+.posts > .post-teaser em {
+    font-style: normal; // Removes italic styling
+  }
+
+#news {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+.player-list {
+    list-style-type: none; // Remove default bullets
+    padding: 0; // Remove default padding
+    margin: 0; // Remove default margin
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; // Adjust as needed
+}
+
+.player-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px; // Adjust width as needed
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+
+}
+
+.button-container {
+    width: 75% ;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+
+.banner {
+    background-color: #ddd;
+    color: #000;
+    text-align: center;
+    padding: 2%;
+}
+
+.table-container {
+    margin: auto;
+}

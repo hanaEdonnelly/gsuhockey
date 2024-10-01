@@ -1,0 +1,83 @@
+---
+layout: homepage
+---
+<div class="home">
+    <style scoped>
+        {% assign image = site.header_feature_image | relative_url | split: '.' %}
+        .call-out_img {
+            background-image: url('{{ image | join: '.' }}');
+        }
+        {% if site.header_feature_image_responsive %}
+        @media screen and (max-width: 768px) {
+            .call-out_img {
+                background-image: url('{{ image[0] | append: '-medium.' | append: image[1] | default: image}}');
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .call-out_img {
+                background-image: url('{{ image[0] | append: '-small.' | append: image[1] }}');
+            }
+        }
+        {% endif %}
+    </style>
+    <div id="main" class="call-out call-out_img">
+        <h1> {{ site.header_text | default: "Change <code>header_text</code> in <code>_config.yml</code>" }} </h1>
+    </div>
+   <!--<div class="posts">
+        <iframe src="https://gamesheetstats.com/seasons/3789/teams/144519/schedule?filter%5Bdivision%5D=21795&filter%5Bquery%5D=carolina&configuration[primary-colour]=73000a&configuration[secondary-colour]=000000&configuration[navigation]=false&configuration[logo]=false&configuration[filters]=false" frameborder="0" style="width:100%; height: 500px;"></iframe>
+   </div>-->
+   <div class="posts">
+    <div class="post-teaser">
+        <div class="button-container">
+            <a href="schedule" class="button-inverse">See a Game</a>
+            <a href="store" class="button-inverse">Our Merch</a>
+        </div>
+    </div>
+   </div>
+    <div class="posts">
+        <div class="post-teaser" id="news">
+            <h1>News</h1>
+        </div>
+        {% for post in site.posts limit:3 %}
+            <div class="post-teaser">
+            {% if post.thumbnail %}
+            <div class="post-img">
+                <a aria-label="{{ post.title }}" href="{{ post.url | relative_url }}">
+                    <img alt="{{ post.title }}" src="{{ post.thumbnail | relative_url }}">
+                </a>
+            </div>
+            {% endif %}
+            <span>
+            <header>
+                <h2>
+                <a aria-label="{{ post.title }}" class="post-link" href="{{ post.url | relative_url }}">
+                    {{ post.title }}
+                </a>
+                </h1>
+                {% include blog/post_info.liquid author=post.author date=post.date %}
+            </header>
+            {% if site.excerpt or site.theme_settings.excerpt %}
+                <div class="excerpt">
+                    {% if site.excerpt == "truncate" %}
+                        {{ post.content | strip_html | truncate: '250' | escape }}
+                    {% else %}
+                        {{ post.excerpt | strip_html | escape }}
+                    {% endif %}
+                </div>
+            {% endif %}
+            </span>
+            <div class="button-container">
+                <a href="pages/news" class="button-inverse">More News</a>
+            </div>
+            </div>
+        {% endfor %}
+        <div class="banner">
+            <h3>Sponsor us here!</h3>
+            <p>We'd love for you or your company to sponsor us.</p>
+            <p>Email us at email@gmail.com for more information.</p>
+        </div>
+{% comment %}
+    {% capture _blog %}{% include blog/blog.liquid %}{% endcapture %} 
+    {{ _blog | split: " " | join: " " }} 
+{% endcomment %}
+</div>

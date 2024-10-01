@@ -1,0 +1,63 @@
+# SITE CONFIGURATION
+url: "https://womenscockrugby.com"
+baseurl: ""
+
+# THEME-SPECIFIC CONFIGURATION
+title: USC Women's Rugby
+description: "The official website of Women's Rugby at the University of South Carolina (UofSC)."
+avatar:                    # Empty for no avatar in navbar
+favicon: "assets/favicon.png"
+
+# Header and footer text
+header_text: "The Home of Lady Gamecocks Rugby"
+header_feature_image: ""
+header_feature_image_responsive: true
+footer_text: 
+  Created by <a href='https://hana.gallery'>Hana Donnelly</a> with <a href='https://github.com/sylhare/Type-on-Strap'>Type on Strap</a>
+
+# Plugins 
+plugins: 
+  - jekyll-seo-tag
+  - jekyll-feed
+
+# Blog
+excerpt: true
+post_navigation: true
+color_image: "assets/img/lineart.png"
+
+# Features
+katex: true
+mermaid: default
+google_analytics:
+cookie_consent: true
+color_theme: auto
+
+# Comments options
+comments:
+  disqus_shortname: ""
+  cusdis_app_id: ""
+  utterances:
+    repo: ""
+    issue-term: ""
+
+# PORTFOLIO
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:name
+  games: 
+    output: true
+    permalink: /games/:name
+  roster:
+    output: true 
+    permalink: /roster/:title/
+
+# BUILD SETTINGS
+sass:
+  style: compressed
+exclude:
+  - ".jekyll-cache"
+  - ".jekyll-metadata"
+  - ".idea"
+  - "vendor/*"
+  - "assets/node_modules/*"

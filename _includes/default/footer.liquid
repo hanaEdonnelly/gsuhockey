@@ -1,0 +1,19 @@
+<footer class="site-footer">
+    <div class="footer-icons">
+        <ul>
+            <!-- Social icons from Font Awesome, if enabled -->
+            {% include social/icons.liquid %}
+        </ul>
+    </div>
+    <p class="text" id="footer-text">
+        <br>
+        {{ site.footer_text | default: "Created by <a href='https:hana.gallery'>Hana Donnelly</a> with <a href='https://github.com/sylhare/Type-on-Strap'>Type on Strap</a>" }}</p>
+    <!--{% if site.mermaid %}
+        <script type="module">
+          mermaid.initialize({ startOnLoad: false, theme: "default" });
+          mermaid.run({ nodes: [...document.querySelectorAll('.language-mermaid'), ...document.querySelectorAll('.mermaid')] });
+        </script>
+    {% endif %}-->
+</footer>
+
+

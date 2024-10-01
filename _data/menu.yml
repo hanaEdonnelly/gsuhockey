@@ -1,0 +1,4 @@
+# To add links to the navigation bar.
+- title: Blog
+  url: /blog/
+  position: 3

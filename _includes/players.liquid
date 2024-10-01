@@ -1,0 +1,11 @@
+{% assign sorted_roster = site.roster | sort: 'order' %}
+
+<ul class="player-list">
+  {% for player in sorted_roster %}
+    <li class="player-card">
+        <h2>{{ player.order }} | {{ player.title }} | {{ player.position }}<br></h2>
+        <p>Hometown: {{ player.hometown }}<br></p>
+        <p>About: {{ player.fact }}</p>
+    </li>
+  {% endfor %}
+</ul>

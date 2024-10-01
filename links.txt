@@ -1,0 +1,7 @@
+Gamesheet team link: https://gamesheetstats.com/seasons/3789/teams/144519/
+
+https://gamesheetstats.com/seasons/3789/scores?filter%5Bdivision%5D=21795&filter%5Bquery%5D=carolina
+
+
+PRevious scores HTML
+        <iframe src="https://gamesheetstats.com/seasons/3789/scores?filter%5Bdivision%5D=21795&filter%5Bquery%5D=carolina%configuration[primary-colour]=73000a&configuration[secondary-colour]=000000" frameborder="0" style="width:100%; height: 1000px;"></iframe>
