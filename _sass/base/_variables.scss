@@ -34,24 +34,24 @@ html, html[data-theme="light"] {
   --blockquote: #eef7fa;
   --selection: #d4d4d4;
   --meta: #595959;
-  --link: #73000a;
+  --link: #A99260;
   --header-background: #24292e;
-  --header-text: #ffffff;
-  --header-link: #383838;
+  --header-text: #f4f5f7;
+  --header-link: #041e42;
   --code-background: #E0E0E0;
   --code-inline: #24292e;
   --text-shadow: #3f3f3f;
-  --text: #262626;
-  --h1: #262626;
-  --h2: #262626;
-  --h3: #262626;
-  --h4: #262626;
-  --h5: #262626;
-  --h6: #262626;
+  --text: #041e42;
+  --h1: #041e42;
+  --h2: #041e42;
+  --h3: #041e42;
+  --h4: #041e42;
+  --h5: #041e42;
+  --h6: #041e42;
   --border: rgba(0, 0, 0, 0.2);
   --table-row-even: #f2f2f2; /* Light gray for even rows in light theme */
   --table-row-odd: #ffffff;  /* White for odd rows in light theme */
-  --table-head-bg: #73000a;
+  --table-head-bg: #041e42;
 }
 
 html[data-theme="dark"] {
@@ -59,27 +59,27 @@ html[data-theme="dark"] {
   --blockquote: #373e47; // blockquote
   --selection: #545d68; // selection
   --meta: #909dab; // meta
-  --link: #a93640; // theme, link, link shadow header bg
+  --link: #A99260; // theme, link, link shadow header bg
   --header-background: #2A3444; // Color before header image load
-  --header-text: #e7f3f4; // header text, feature img text
-  --header-link: #adbac7; // header link, search color
+  --header-text: #f4f5f7; // header text, feature img text
+  --header-link: #f4f5f7; // header link, search color
   --code-background: #2A3444;
   --code-inline: #d9b600;
   --text-shadow: #2d333b; // text shadow
-  --text: #cdd9e5; // text
-  --h1: #e7f3f4; // headers
-  --h2: #e7f3f4;
-  --h3: #e7f3f4;
-  --h4: #e7f3f4;
-  --h5: #e7f3f4;
-  --h6: #e7f3f4;
-  --hr: #e7f3f4; /* Dark theme horizontal rule color */
+  --text: #f8f7f3; // text
+  --h1: #f8f7f3; // headers
+  --h2: #f8f7f3;
+  --h3: #f8f7f3;
+  --h4: #f8f7f3;
+  --h5: #f8f7f3;
+  --h6: #f8f7f3;
+  --hr: #f8f7f3; /* Dark theme horizontal rule color */
   --border: rgba(255, 255, 255, 0.5);
   --cusdis--color-text-default: var(--text);
   --cusdis--color-comment-username-text: var(--link);
-  --table-row-even: #2a2e35; /* Darker gray for even rows in dark theme */
-  --table-row-odd: #22272e;  /* Dark background for odd rows in dark theme */
-  --table-head-bg: #73000a;
+  --table-row-even: #3c444b; /* Darker gray for even rows in dark theme */
+  --table-row-odd: #2f353c;  /* Dark background for odd rows in dark theme */
+  --table-head-bg: #A99260;
   
 }
 

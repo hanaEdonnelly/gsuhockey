@@ -3,13 +3,13 @@ url: "https://womenscockrugby.com"
 baseurl: ""
 
 # THEME-SPECIFIC CONFIGURATION
-title: USC Women's Rugby
-description: "The official website of Women's Rugby at the University of South Carolina (UofSC)."
+title: Women's Hockey @ GSU
+description: "The official website of Women's Hockey at Georgia Southern University (GSU)."
 avatar:                    # Empty for no avatar in navbar
 favicon: "assets/favicon.png"
 
 # Header and footer text
-header_text: "The Home of Lady Gamecocks Rugby"
+header_text: "The Home of the Ice Eagles"
 header_feature_image: ""
 header_feature_image_responsive: true
 footer_text: 
